@@ -104,7 +104,7 @@ body {
 @media (max-width: 768px) {
   // Adjustments for tablet screens
   #present-container img {
-    width: 75%; // Larger percentage for smaller screens
+    width: 85%; // Larger percentage for smaller screens
   }
 
   #hosts-social-media {
@@ -118,6 +118,14 @@ body {
 
 @media (max-width: 480px) {
   // Adjustments for mobile screens
+  #main-container {
+    justify-content: flex-start;
+  }
+
+  #present-container img {
+    width: 100%; // Larger percentage for smaller screens
+  }
+
   #page-title {
     font-size: large; // Smaller font size for mobile
   }
