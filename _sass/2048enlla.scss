@@ -1,22 +1,29 @@
 $backgroundColor: #f9a13c;
 $bodyColor: #000000;
-$bodyFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
-  font-family: $bodyFont;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 #present-container {
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; // Ensures full width on mobile
 }
 
 #present-container img {
-  width: 50%;
+  width: 45%;
 }
 
 #page-title {
@@ -32,20 +39,116 @@ body {
   font-size: small;
 }
 
-@media (min-width: 730px) {
-  #content {
-    margin-top: 50px;
-    margin-bottom: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 730px;
+// Test the social media icons
+#hosts-social-media {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%; // Changed to width to control spacing rather than margins
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap; // Allows the card to wrap on small screens
+  align-items: center;
+}
+
+.avatar-container {
+  flex-shrink: 0; // Prevents the avatar from shrinking
+  margin: 10px; // Adds spacing around the avatar
+}
+
+.avatar {
+  width: 65px; // Adjust the size as needed
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-left: 10px; // Adjust the spacing as needed
+  text-align: left;
+  flex-grow: 1; // Allows the text container to fill the available space
+  font-size: xx-small;
+}
+
+.name {
+  margin: 0 0 2px 0;
+}
+
+.social-link {
+  color: #0066cc; // Adjust the color as needed
+  text-decoration: none;
+  font-size: x-small;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+#podcast-social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%; // Changed to width to control spacing rather than margins
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#podcast-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  // Adjustments for tablet screens
+  #present-container img {
+    width: 75%; // Larger percentage for smaller screens
+  }
+
+  #hosts-social-media {
+    width: 80%; // Increased width for smaller screens
+  }
+
+  .profile-card {
+    justify-content: center; // Center the items on small screens
   }
 }
 
-@media (max-width: 730px) {
-  #content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+@media (max-width: 480px) {
+  // Adjustments for mobile screens
+  #page-title {
+    font-size: large; // Smaller font size for mobile
+  }
+
+  #page-subtitle {
+    font-size: small; // Smaller font size for mobile
+  }
+
+  #hosts-names {
+    font-size: xx-small; // Smaller font size for mobile
+  }
+
+  .profile-card {
+    flex-direction: column; // Stack avatar and text on top of each other
+    align-items: center; // Center align items for mobile
+  }
+
+  .avatar-container {
+    margin-bottom: 10px; // Add space between avatar and text on mobile
+  }
+
+  .text-container {
+    margin-left: 0; // Remove margin-left as it's no longer needed
+  }
+
+  .avatar {
+    width: 35px; // Adjust the size as needed
+  }
+
+  #hosts-social-media {
+    width: 100%; // Full width for social media icons container
+    padding: 0 10px; // Add padding on small screens
   }
 }
