@@ -11,8 +11,7 @@ body {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 2rem;
+  align-items: center;
 }
 
 #present-container {
@@ -23,7 +22,7 @@ body {
 }
 
 #present-container img {
-  width: 45%;
+  width: 40%;
 }
 
 #page-title {
@@ -98,6 +97,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.footer {
+  font-size: x-small;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 // Media queries for responsiveness
