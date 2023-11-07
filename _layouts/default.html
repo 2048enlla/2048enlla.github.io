@@ -1,17 +1,39 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "ca" }}">
+<html lang="{{ site.lang | default: "ca_ES" }}">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <!-- Title Tag Optimization: Include main keywords and make it compelling -->
+  <title>{{ page.title }} | {{ page.title_extra }}</title>
+  <!-- Meta Description: Write a compelling description with keywords -->
+  <meta name="description" content="{{ page.head_description }}">
+  <!-- Canonical Link: Ensure you avoid duplicate content issues -->
+  <link rel="canonical" href="{{page.site_url}}"/>
+  <!-- Social Media Tags: -->
+  <meta property="og:title" content="{{ page.seo_social_title }}"/>
+  <meta property="og:description" content="{{ page.seo_social_description }}"/>
+  <meta property="og:url" content="{{page.site_url}}"/>
+  <meta property="og:image" content="{{ page.seo_social_url_image }}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="ca_ES"/>
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{ page.twitter_handle }}">
+  <meta name="twitter:title" content="{{ page.seo_social_title }}">
+  <meta name="twitter:description" content="{{ page.twitter_mark }}">
+  <meta name="twitter:image" content="{{ seo_social_url_image }}">
+  <meta name="twitter:creator" content="@2048enlla">
+  <!-- Favicon and Touch Icons -->
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- SEO Friendly Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 
