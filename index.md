@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Més enllà del 2048?"
-title_extra: "Podcast sobre Tecnologia i Desenvolupament en Català"
+title_extra: "Pòdcast sobre Tecnologia i Desenvolupament en Català"
 subtitle: "Un pòdcast de Tecnologia en català"
 head_description: "Escolta Més enllà del 2048?, el podcast en català on parlem de tecnologia, software i tendències en desenvolupament."
 site_url: "https://www.2048enlla.cat"
