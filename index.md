@@ -9,5 +9,5 @@ seo_social_title: "Més enllà del 2048? | Podcast de Tecnologia en Català"
 seo_social_description: "Uneix-te a la nostra conversa sobre tecnologia, software, i desenvolupament. Escolta ara en català."
 seo_social_url_image: "https://www.2048enlla.cat/images/social/social-image-bw.png"
 twitter_handle: "@2048enlla"
-twitter_mark: "Segueix-nos i descobreix les últimes tendències en tecnologia i desenvolupament de software. #podcast #tecnologia #català"
+twitter_mark: "Segueix-nos i descobreix les darreres tendències en tecnologia i desenvolupament de software. #podcast #tecnologia #català"
 ---
